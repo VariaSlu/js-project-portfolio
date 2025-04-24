@@ -14,7 +14,7 @@ export const App = () => {
         title="Project Two"
         text="bla bla" />
       <Card
-        title="Project Three" git
+        title="Project Three"
         text="bla bla" />
     </>
   )
