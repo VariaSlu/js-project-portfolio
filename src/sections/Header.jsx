@@ -3,7 +3,6 @@ import faceIcon from '../assets/faceIcon.svg'
 
 const Section = styled.section`
   padding: 8rem 2rem 4rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
