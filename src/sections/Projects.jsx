@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import ProjectCard from './Card';
+import { ProjectCard } from '../components/ProjectCard';
+
 
 const Section = styled.section`
   padding: 4rem 2rem;
@@ -16,7 +17,7 @@ const Grid = styled.div`
   gap: 2rem;
 `;
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <Section>
       <Title>Featured Projects</Title>
@@ -30,5 +31,3 @@ const Projects = () => {
     </Section>
   )
 }
-
-export default Projects

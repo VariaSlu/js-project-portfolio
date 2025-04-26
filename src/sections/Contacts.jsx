@@ -14,7 +14,7 @@ const Info = styled.p`
   margin: 0.5rem 0;
 `;
 
-const Contacts = () => {
+export const Contacts = () => {
   return (
     <Section>
       <Title>Let’s talk</Title>
@@ -25,4 +25,3 @@ const Contacts = () => {
   )
 }
 
-export default Contacts

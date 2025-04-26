@@ -1,21 +1,20 @@
 import "./index.css"
-import Card from "./components/Card"
-import Header from "./components/Header"
+import { Header } from "./sections/Header"
+import { Contacts } from "./sections/Contacts"
+import { Projects } from "./sections/Projects"
+import { Skills } from "./sections/Skills"
+import { Tech } from "./sections/Tech"
 
 
 export const App = () => {
   return (
     <>
       <Header />
-      <Card
-        title="Project One"
-        text="bla bla" />
-      <Card
-        title="Project Two"
-        text="bla bla" />
-      <Card
-        title="Project Three"
-        text="bla bla" />
+      <Tech />
+      <Projects />
+      <Skills />
+      <Contacts />
+
     </>
   )
 }

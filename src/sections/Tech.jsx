@@ -16,7 +16,7 @@ const TechList = styled.p`
   margin: 0 auto;
 `;
 
-const Tech = () => {
+export const Tech = () => {
   return (
     <Section>
       <Title>Tech</Title>
@@ -29,4 +29,5 @@ const Tech = () => {
   )
 }
 
-export default Tech
+
+
