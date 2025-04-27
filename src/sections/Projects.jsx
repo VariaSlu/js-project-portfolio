@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ProjectCard } from '../components/ProjectCard';
 
 
+
 const Section = styled.section`
   padding: 4rem 2rem;
 `;
