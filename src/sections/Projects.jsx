@@ -8,8 +8,11 @@ const Section = styled.section`
 `;
 
 const Title = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  color: black;
+font-size: 80px;
+font-family: Montserrat;
+font-weight: 700;
+word-wrap: break-word;
 `;
 
 const Grid = styled.div`

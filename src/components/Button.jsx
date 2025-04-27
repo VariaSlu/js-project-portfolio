@@ -12,6 +12,7 @@ const StyledButton = styled.button`
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 600;
+background: #F5F5F5;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -22,7 +23,7 @@ const StyledButton = styled.button`
       case "primary": return "#0047FF";
       case "secondary": return "#FA5252";
       case "tertiary": return "#FFD43B";
-      default: return "#FFFFFF";
+      default: return "#F5F5F5";
     }
   }};
   
@@ -34,11 +35,7 @@ const StyledButton = styled.button`
       default: return "#333333";
     }
   }};
-  
-  /* Border for default variant */
-  border: ${props => props.variant === "default" ? "1px solid #E0E0E0" : "none"};
-  
-  /* Simple hover effect */
+    
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
