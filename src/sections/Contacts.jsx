@@ -34,7 +34,7 @@ margin: 0.5rem 0;
 export const Contacts = () => {
   return (
     <Section>
-      <Title>Let’s talk</Title>
+      <Title>Contact (But No Pressure)</Title>
       <PhotoMe src={photoMe} alt="Portrait of Varvara Slugina" />
       <Info>Varia Slugina</Info>
       <Info>+46101000000</Info>

@@ -86,7 +86,7 @@ export const Header = () => {
         <IntroContainer>
           <Face src={faceIcon} alt="face" />
           <IntroText>
-            My unique perspective allows me to work at the intersection of design and development, creating solutions that respect user experience and technical implementation. The future belongs to those who can speak both languages fluently, and I'm committed to being that bridge.
+            I work somewhere between design and development. It's a lot of building things, fixing things, and pretending that's what I meant to do the whole time.
           </IntroText>
         </IntroContainer>
         <Arrow>↓</Arrow>

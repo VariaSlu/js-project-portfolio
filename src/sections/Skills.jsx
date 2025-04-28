@@ -79,6 +79,7 @@ export const Skills = () => {
             <Item>CSS3</Item>
             <Item>Javascript ES6</Item>
             <Item>React</Item>
+            <Item>Node.js</Item>
             <Item>Styled Components</Item>
             <Item>GitHub</Item>
           </List>
@@ -92,11 +93,11 @@ export const Skills = () => {
             Toolbox
           </CategoryLabel>
           <List>
+            <Item>Figma</Item>
             <Item>Atom</Item>
             <Item>Postman</Item>
             <Item>Adobe Photoshop</Item>
             <Item>Adobe Illustrator</Item>
-            <Item>Figma</Item>
             <Item>Keynote</Item>
             <Item>Slack</Item>
           </List>
@@ -107,10 +108,13 @@ export const Skills = () => {
             color="#6DB486"
             aria-label="Upcoming skills category"
           >
-            Upcoming
+            Communication
           </CategoryLabel>
           <List>
-            <Item>Node.js</Item>
+            <Item>Dry</Item>
+            <Item>Ironic</Item>
+            <Item>Funny</Item>
+            <Item>Maybe a little awkward</Item>
           </List>
         </Column>
 
