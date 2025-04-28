@@ -22,6 +22,7 @@ background: #C4C4C4;
 width: 408px;
 height: 280px;
 flex-shrink: 0;
+padding: 16px;
 `;
 
 const Right = styled.div`
@@ -71,8 +72,8 @@ export const ProjectCard = ({ title, text }) => {
     <Content>
       <StyledImg />
       <Right>
-        <h2>{title}</h2>
-        <p>{text}</p>
+        <Title>{title}</Title>
+        <Text>{text}</Text>
         <TechStack>
           <span>HTML5</span>
           <span>CSS3</span>
