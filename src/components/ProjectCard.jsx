@@ -14,7 +14,7 @@ const ProjectItem = styled.article`
   }
 `;
 
-const ProjectImagePlaceholder = styled.div`
+const ProjectImagePlaceholder = styled.img`
   background-color: #d3d3d3;
   width: 100%;
   height: 240px;
@@ -58,7 +58,6 @@ const Tag = styled.span`
   background-color: black;
   color: white;
   padding: 0.25rem 0.75rem;
-  
   font-size: 0.8rem;
 `;
 
@@ -88,7 +87,11 @@ const Button = styled.a`
 export const ProjectCard = ({ project }) => {
   return (
     <ProjectItem>
-      <ProjectImagePlaceholder />
+      <ProjectImagePlaceholder
+        src={project.image}
+        alt={`${project.name} project screenshot`}
+        onError={(e) => { e.target.src = 'path/to/fallback-image.jpg'; }}
+      />
       <ProjectContent>
         <ProjectTitle>{project.name}</ProjectTitle>
         <ProjectGoal>
