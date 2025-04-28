@@ -1,80 +1,139 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-  background: #333;
+  background: #494A4C;
   color: white;
   padding: 4rem 2rem;
   text-align: center;
 `;
 
 const Title = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  color: white;
+font-size: 80px;
+font-family: Montserrat;
+font-weight: 700;
+word-wrap: break-word
 `;
 
 const Columns = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 const Column = styled.div`
-  min-width: 120px;
+  min-width: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 `;
 
-const SkillTitle = styled.h4`
-  font-size: 1.2rem;
+const CategoryLabel = styled.div`
+  display: inline-block;
+  background-color: ${props => props.color};
+  color: ${props => props.textColor || 'white'};
+  font-weight: 600;
+  padding: 0px;
   margin-bottom: 1rem;
+  font-size: 32px;
+  font-family: Montserrat, sans-serif;
+  position: relative;
 `;
 
 const List = styled.ul`
   list-style: none;
   padding: 0;
+  margin: 0;
 `;
 
 const Item = styled.li`
-  margin-bottom: 0.5rem;
+color: white;
+font-size: 18px;
+font-weight: 400;
+word-wrap: break-word;  
+margin-bottom: 0.5rem;
+font-family: Montserrat, sans-serif;
 `;
 
 
 export const Skills = () => {
   return (
-    <Section>
+    <Section id="skills">
       <Title>Skills</Title>
+
       <Columns>
         <Column>
-          <SkillTitle>Code</SkillTitle>
+          <CategoryLabel
+            color="#EB5577"
+            aria-label="Code skills category"
+          >
+            Code
+          </CategoryLabel>
           <List>
-            <Item>HTML</Item>
-            <Item>CSS</Item>
-            <Item>JavaScript</Item>
-          </List>
-        </Column>
-        <Column>
-          <SkillTitle>Toolbox</SkillTitle>
-          <List>
+            <Item>HTML5</Item>
+            <Item>CSS3</Item>
+            <Item>Javascript ES6</Item>
             <Item>React</Item>
-            <Item>Node.js</Item>
-            <Item>MongoDB</Item>
-          </List>
-        </Column>
-        <Column>
-          <SkillTitle>Upcoming</SkillTitle>
-          <List>
-            <Item>TypeScript</Item>
-            <Item>Testing</Item>
-          </List>
-        </Column>
-        <Column>
-          <SkillTitle>More</SkillTitle>
-          <List>
+            <Item>Styled Components</Item>
             <Item>GitHub</Item>
+          </List>
+        </Column>
+
+        <Column>
+          <CategoryLabel
+            color="#2483E0"
+            aria-label="Toolbox skills category"
+          >
+            Toolbox
+          </CategoryLabel>
+          <List>
+            <Item>Atom</Item>
+            <Item>Postman</Item>
+            <Item>Adobe Photoshop</Item>
+            <Item>Adobe Illustrator</Item>
             <Item>Figma</Item>
+            <Item>Keynote</Item>
+            <Item>Slack</Item>
+          </List>
+        </Column>
+
+        <Column>
+          <CategoryLabel
+            color="#6DB486"
+            aria-label="Upcoming skills category"
+          >
+            Upcoming
+          </CategoryLabel>
+          <List>
+            <Item>Node.js</Item>
+          </List>
+        </Column>
+
+        <Column>
+          <CategoryLabel
+            color="#FFDE30"
+            textColor="#333333"
+            aria-label="More skills category"
+          >
+            More
+          </CategoryLabel>
+          <List>
+            <Item>Design Lead</Item>
+            <Item>Branding</Item>
+            <Item>Strategy</Item>
+            <Item>Process design</Item>
+            <Item>Concept development</Item>
+            <Item>Agile methodology</Item>
+            <Item>Hyper Island toolbox</Item>
           </List>
         </Column>
       </Columns>
     </Section>
-
   )
 }
 

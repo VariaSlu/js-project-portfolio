@@ -5,3 +5,50 @@ body {
   color: black;
   font-family: 'Montserrat', sans-serif;
 }
+
+/* skills section */
+.category-label {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 6px 16px;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.code {
+  background-color: #eb5577;
+}
+
+.toolbox {
+  background-color: #2483e0;
+}
+
+.upcoming {
+  background-color: #6db486;
+}
+
+.more {
+  background-color: #ffde30;
+}
+
+.skills-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.category {
+  flex: 1;
+  min-width: 200px;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category li {
+  margin-bottom: 8px;
+  color: white;
+}

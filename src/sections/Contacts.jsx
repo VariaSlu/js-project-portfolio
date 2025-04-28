@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import photoMe from '../assets/PhotoVaria.png';
 
 const Section = styled.section`
   padding: 234px 128px;
@@ -6,27 +7,36 @@ const Section = styled.section`
 `;
 
 const Title = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  color: black;
+font-size: 80px;
+font-family: Montserrat;
+font-weight: 700;
+word-wrap: break-word;
 `;
 
 const PhotoMe = styled.img`
-width: 10%;
-height: 10%;
-background: #D9D9D9;
-border-radius: 9999px;
+width: 164px; /* Better to use fixed size */
+  height: 164px;
+  background: #D9D9D9;
+  border-radius: 9999px;
+  object-fit: cover;
 `;
 
 const Info = styled.p`
-  margin: 0.5rem 0;
+color: black;
+font-size: 32px;
+font-family: Montserrat; sans-serif;
+font-weight: 600;
+word-wrap: break-word;  
+margin: 0.5rem 0;
 `;
 
 export const Contacts = () => {
   return (
     <Section>
       <Title>Let’s talk</Title>
-      <PhotoMe src="https://placehold.co/164x164" alt="Me" />
-      <Info>Varia SLu</Info>
+      <PhotoMe src={photoMe} alt="Portrait of Varvara Slugina" />
+      <Info>Varia Slugina</Info>
       <Info>+46101000000</Info>
       <Info>varvaraslugina@gmail.com</Info>
     </Section>
