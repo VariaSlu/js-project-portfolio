@@ -1,109 +1,121 @@
 import styled from 'styled-components';
-import { Button } from './Button';
-import { FaGlobe, FaGithub, FaFileAlt } from "react-icons/fa";
+import { FaFileAlt, FaGlobe, FaGithub } from 'react-icons/fa'; // Optional icons
 
-const Content = styled.div`
-display: flex;
-width: 100%;
-height: 100%;
-max-width: 900px;
-background: none;
-padding: 0;
-border-radius: 0px;
-overflow: hidden;
-margine: 2rem 0;
+
+
+const ProjectItem = styled.article`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 `;
 
-const StyledImg = styled.img`
-width: 100%;
-height: 100%;
-flex: 1;
-background: #C4C4C4;
-width: 408px;
-height: 280px;
-flex-shrink: 0;
-padding: 16px;
+const ProjectImagePlaceholder = styled.div`
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 240px;
+  margin-bottom: 1rem;
+  
+  @media (min-width: 768px) {
+    width: 40%;
+    max-width: 400px;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
 `;
 
-const Right = styled.div`
-flex: 1;
-padding: 0;
-display: flex;
-flex-direction: column;
-justify-content: center;
+const ProjectContent = styled.div`
+  flex: 1;
 `;
 
-const Title = styled.span`
-  color: black;
-  pudding:0;
-font-size: 32px;
-font-family: Montserrat;
-font-weight: 600;
-word-wrap: break-word;
+const ProjectTitle = styled.h2`
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem;
 `;
 
-const Text = styled.span`
-  color: black;
-font-size: 18px;
-font-family: Hind;
-font-weight: 700;
-word-wrap: break-word;
+const ProjectGoal = styled.div`
+  margin-bottom: 0.75rem;
 `;
 
-const TechStack = styled.div`
+const ProjectRole = styled.div`
+  margin-bottom: 1.5rem;
+`;
+
+const TagContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+`;
+
+const Tag = styled.span`
+  background-color: black;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  
+  font-size: 0.8rem;
+`;
+
+const ButtonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
 `;
 
-const Buttons = styled.div`
-display: flex;
-align-items: center;
-gap: 2rem;
-
+const Button = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f5f5f5;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  
+  &:hover {
+    background-color: #e5e5e5;
+  }
 `;
 
-export const ProjectCard = ({ title, text }) => {
+
+export const ProjectCard = ({ project }) => {
   return (
-    <Content>
-      <StyledImg />
-      <Right>
-        <Title>{title}</Title>
-        <Text>{text}</Text>
-        <TechStack>
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>React</span>
-          <span>Team Project</span>
-          <span>Lighthouse</span>
-          <span>WAVE</span>
-        </TechStack>
-        <Buttons>
-          <Button
-            variant="default"
-            icon={<FaFileAlt />}
-          >
-            The  process
-          </Button>
-          <Button
-            variant="default"
-            icon={<FaGlobe />}
-          >
-            Live demo
-          </Button>
-          <Button
-            variant="default"
-            icon={<FaGithub />}
-          >
-            View the code
-          </Button>
-        </Buttons>
-      </Right>
-    </Content>
+    <ProjectItem>
+      <ProjectImagePlaceholder />
+      <ProjectContent>
+        <ProjectTitle>{project.name}</ProjectTitle>
+        <ProjectGoal>
+          <strong>Goal:</strong> {project.goal}
+        </ProjectGoal>
+        <ProjectRole>
+          <strong>My role:</strong> {project.role}
+        </ProjectRole>
 
+        <TagContainer>
+          {project.tags.map((tag, index) => (
+            <Tag key={index}>{tag}</Tag>
+          ))}
+        </TagContainer>
+
+        <ButtonContainer>
+          <Button href={project.links.process}>
+            <FaFileAlt /> The process
+          </Button>
+          <Button href={project.links.demo}>
+            <FaGlobe /> Live demo
+          </Button>
+          <Button href={project.links.code}>
+            <FaGithub /> View the code
+          </Button>
+        </ButtonContainer>
+      </ProjectContent>
+    </ProjectItem>
   )
 }
