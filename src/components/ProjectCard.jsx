@@ -77,9 +77,22 @@ const Button = styled.a`
   border-radius: 2rem;
   text-decoration: none;
   font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
   
-  &:hover {
-    background-color: #e5e5e5;
+  /* Button type variants for hover effects */
+  &.live-demo:hover {
+    background-color: #0047ff; /* Blue for Live demo */
+    color: white;
+  }
+  
+  &.view-code:hover {
+    background-color: #e55c7a; /* Pink/red for View the code */
+    color: white;
+  }
+  
+  &.read-article:hover {
+    background-color: #ffd62a; /* Yellow for Read article */
+    color: #333;
   }
 `;
 
@@ -108,13 +121,13 @@ export const ProjectCard = ({ project }) => {
         </TagContainer>
 
         <ButtonContainer>
-          <Button href={project.links.process}>
+          <Button href={project.links.process} className="read-article">
             <FaFileAlt /> The process
           </Button>
-          <Button href={project.links.demo}>
+          <Button href={project.links.demo} className="live-demo">
             <FaGlobe /> Live demo
           </Button>
-          <Button href={project.links.code}>
+          <Button href={project.links.code} className="view-code">
             <FaGithub /> View the code
           </Button>
         </ButtonContainer>
