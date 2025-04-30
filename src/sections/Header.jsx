@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import faceIcon from '../assets/faceIcon.svg'
-import arrow from '../public/arrow.svg';
+import arrow from '../assets/Arrow.svg';
 
 const Section = styled.section`
   padding: 8rem 1.5rem 4rem;
