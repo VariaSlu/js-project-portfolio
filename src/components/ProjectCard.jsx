@@ -81,17 +81,17 @@ const Button = styled.a`
   
   /* Button type variants for hover effects */
   &.live-demo:hover {
-    background-color: #0047ff; /* Blue for Live demo */
+    background-color: #0B24F5; /* Blue for Live demo */
     color: white;
   }
   
   &.view-code:hover {
-    background-color: #e55c7a; /* Pink/red for View the code */
+    background-color: #EB5577; /* Pink/red for View the code */
     color: white;
   }
   
   &.read-article:hover {
-    background-color: #ffd62a; /* Yellow for Read article */
+    background-color: #FFD338; /* Yellow for Read article */
     color: #333;
   }
 `;

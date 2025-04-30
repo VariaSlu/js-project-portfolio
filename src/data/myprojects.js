@@ -8,7 +8,7 @@ export const myprojects = [
     tags: ["HTML5", "CSS3", "React", "Personal project", "CSS libraries", "Will power"],
     links: {
       process: "#process-link",
-      code: "https://github.com/example",
+      code: "https://github.com/VariaSlu",
       demo: "https://example.netlify.app"
     }
   },
@@ -20,7 +20,7 @@ export const myprojects = [
     tags: ["HTML5", "CSS3", "React", "WAI-ARIA", "Lighthouse", "WCAG"],
     links: {
       process: "#process-link",
-      code: "https://github.com/example",
+      code: "https://github.com/VariaSlu",
       demo: "https://example.netlify.app"
     }
   },
@@ -32,7 +32,31 @@ export const myprojects = [
     tags: ["HTML5", "CSS3", "TypeScript", "APIs"],
     links: {
       process: "#process-link",
-      code: "https://github.com/example",
+      code: "https://github.com/VariaSlu",
+      demo: "https://example.netlify.app"
+    }
+  },
+  {
+    name: "Recipe app",
+    image: "https://images.unsplash.com/photo-1520792532857-293bd046307a?auto=format&fit=crop&w=600&q=80",
+    goal: "working with APIs to fetch external data to our App.",
+    role: "fetched real recipes from API, dynamically updated the UI, handled API limits. Adjust filtering and sorting logic to match the new API response format. Deal with missing or inconsistent data.",
+    tags: ["HTML5", "CSS3", "JavaScript", "APIs", "Personal project"],
+    links: {
+      process: "#process-link",
+      code: "https://github.com/VariaSlu",
+      demo: "https://example.netlify.app"
+    }
+  },
+  {
+    name: "Tarot for developers",
+    image: "https://images.unsplash.com/photo-1520792532857-293bd046307a?auto=format&fit=crop&w=600&q=80",
+    goal: "project helpd me get a little bit of context on how developers think while learning new coding skills and building my first functional web experience.",
+    role: "learn and use VS code, GitHub and other tools first time.",
+    tags: ["HTML5", "CSS3", "Personal project"],
+    links: {
+      process: "#process-link",
+      code: "https://github.com/VariaSlu",
       demo: "https://example.netlify.app"
     }
   }

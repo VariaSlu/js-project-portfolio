@@ -7,29 +7,44 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  max-width: 800px;
   margin: 0 auto;
-  gap: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1044px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
 `;
 
 const Title = styled.h2`
   color: #000;
+  font-family: Montserrat;
+  font-size: clamp(32px, 6vw, 80px);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
 
-font-family: Montserrat;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 `;
 
 const TechList = styled.p`
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
   word-wrap: break-word;
+  font-size: clamp(14px, 2vw, 18px);
   text-align: left;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 `;
 
 export const Tech = () => {
@@ -44,8 +59,5 @@ export const Tech = () => {
         </TechList>
       </Container>
     </Section>
-  )
-}
-
-
-
+  );
+};

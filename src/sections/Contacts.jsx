@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import photoMe from '../assets/PhotoVaria.png';
 
 const Section = styled.section`
-  padding: 234px 128px;
+  padding: 4rem 2rem;
   text-align: center;
 `;
 
 const Title = styled.h2`
   color: black;
-font-size: 80px;
+  font-size: clamp(32px, 6vw, 80px);
 font-family: Montserrat;
 font-weight: 700;
 word-wrap: break-word;
@@ -24,7 +24,7 @@ width: 164px; /* Better to use fixed size */
 
 const Info = styled.p`
 color: black;
-font-size: 32px;
+font-size: clamp(16px, 6vw, 32px);
 font-family: Montserrat; sans-serif;
 font-weight: 600;
 word-wrap: break-word;  

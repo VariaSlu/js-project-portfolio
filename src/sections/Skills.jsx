@@ -9,7 +9,7 @@ const Section = styled.section`
 
 const Title = styled.h2`
   color: white;
-font-size: 80px;
+  font-size: clamp(32px, 6vw, 80px);
 font-family: Montserrat;
 font-weight: 700;
 word-wrap: break-word
