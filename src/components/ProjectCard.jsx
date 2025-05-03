@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaFileAlt, FaGlobe, FaGithub } from 'react-icons/fa'; // Optional icons
+import { FaFileAlt, FaGlobe, FaGithub } from 'react-icons/fa';
 
 
 
@@ -79,19 +79,18 @@ const Button = styled.a`
   font-weight: 500;
   transition: background-color 0.2s ease, color 0.2s ease;
   
-  /* Button type variants for hover effects */
   &.live-demo:hover {
-    background-color: #0B24F5; /* Blue for Live demo */
+    background-color: #0B24F5;
     color: white;
   }
   
   &.view-code:hover {
-    background-color: #EB5577; /* Pink/red for View the code */
+    background-color: #EB5577;
     color: white;
   }
   
   &.read-article:hover {
-    background-color: #FFD338; /* Yellow for Read article */
+    background-color: #FFD338;
     color: #333;
   }
 `;
