@@ -108,7 +108,7 @@ export const Skills = () => {
             color="#6DB486"
             aria-label="Upcoming skills category"
           >
-            Communication
+            Personality
           </CategoryLabel>
           <List>
             <Item>Dry</Item>

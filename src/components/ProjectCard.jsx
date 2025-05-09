@@ -89,7 +89,7 @@ const Button = styled.a`
     color: white;
   }
   
-  &.read-article:hover {
+  &.the-process:hover {
     background-color: #FFD338;
     color: #333;
   }
@@ -120,7 +120,7 @@ export const ProjectCard = ({ project }) => {
         </TagContainer>
 
         <ButtonContainer>
-          <Button href={project.links.process} className="read-article">
+          <Button href={project.links.process} className="the-process">
             <FaFileAlt /> The process
           </Button>
           <Button href={project.links.demo} className="live-demo">
