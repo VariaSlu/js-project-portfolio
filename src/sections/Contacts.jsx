@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import photoMe from '../assets/PhotoVaria.png';
 
 const Section = styled.section`
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 8rem;
   text-align: center;
 `;
 

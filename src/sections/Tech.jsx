@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   background: #ddd;
-  padding: 4rem 2rem;
+  padding: 18rem 2rem;
   text-align: center;
 `;
 
